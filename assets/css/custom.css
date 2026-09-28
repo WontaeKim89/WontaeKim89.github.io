@@ -94,3 +94,20 @@ a:hover > .article-link--card,
 
 /* ---- 카드에는 카테고리 + 태그 2개까지만 ---- */
 .article-link--card .flex-wrap > a:nth-child(n+4) { display: none; }
+
+/* ---- 본문 폭: 기본 65ch → 52rem 으로 넓혀 한 줄에 더 많이 읽히게 ---- */
+.article-content.max-w-prose,
+#single_header.max-w-prose,
+footer.max-w-prose,
+.prose.max-w-prose { max-width: 52rem; }
+.article-content { font-size: 1.0625rem; }
+
+/* ---- 타임라인 카드 ---- */
+.prose ol.border-s-2 li > div > div.shadow-2xl {
+  border: 1px solid rgb(var(--color-neutral-200));
+  box-shadow: none;
+}
+.dark .prose ol.border-s-2 li > div > div.shadow-2xl {
+  background: rgb(var(--color-neutral-900) / 0.6);
+  border-color: rgb(255 255 255 / 0.07);
+}
