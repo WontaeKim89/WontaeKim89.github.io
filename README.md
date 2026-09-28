@@ -2,5 +2,6 @@
 
 AI Engineer 김원태의 기술 블로그 — https://wontaekim89.github.io
 
-- 테마: [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) v7
-- 이전 글: `tools/migrate_tistory.py` 로 Tistory(familia-89.tistory.com) 공개 글 63편을 옮김
+- Hugo + [Blowfish](https://github.com/nunocoracao/blowfish) (submodule `themes/blowfish`), 색상 `assets/css/schemes/phosphor.css`, 커스텀 `assets/css/custom.css`
+- 새 글: `content/posts/YYYY-MM-DD-slug.md` 추가 후 push (front matter 에 `featureimage: "img/covers/<카테고리>.jpg"`)
+- 커버·히어로 이미지: `tools/gen_images.py`, 티스토리 이전: `tools/migrate_tistory.py`(일회성)

@@ -1,0 +1,20 @@
+locale = "ko"
+label = "한국어"
+weight = 1
+title = "김원태"
+
+[params]
+  displayName = "KO"
+  isoCode = "ko"
+  rtl = false
+  dateFormat = "2006.01.02"
+  description = "AI Engineer 김원태의 기술 블로그. LLM 에이전트, 도메인 임베딩, 폐쇄망 배포, ML 공부 기록."
+
+[params.author]
+  name = "김원태"
+  headline = "AI Engineer · Forward Deployed Engineer"
+  bio = "고객 현장에서 문제를 뜯어보고, 그 상황에 맞는 에이전트와 모델을 만듭니다."
+  links = [
+    { github = "https://github.com/WontaeKim89" },
+    { email = "mailto:zzang891014@gmail.com" },
+  ]

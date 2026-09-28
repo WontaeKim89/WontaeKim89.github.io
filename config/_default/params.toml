@@ -1,0 +1,65 @@
+colorScheme = "phosphor"
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+enableSearch = true
+enableCodeCopy = true
+mainSections = ["posts"]
+defaultBackgroundImage = "img/hero.jpg"
+imagePosition = "50% 30%"
+
+[header]
+  layout = "fixed-fill-blur"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "background"
+  homepageImage = "img/hero.jpg"
+  showRecent = true
+  showRecentItems = 9
+  showMoreLink = true
+  showMoreLinkDest = "/posts/"
+  cardView = true
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = true
+
+[article]
+  showDate = true
+  showAuthor = true
+  showHero = true
+  heroStyle = "big"
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = true
+  showReadingProgress = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showCategoriesInSecondaryColor = true
+  showWordCount = false
+  showZenMode = false
+
+[list]
+  showHero = false
+  showBreadcrumbs = false
+  showSummary = true
+  showCards = true
+  groupByYear = true
+  cardView = true
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
+
+[taxonomy]
+  showTermCount = true
+  cardView = false
+
+[term]
+  showTableOfContents = false
+  groupByYear = false
+  cardView = true

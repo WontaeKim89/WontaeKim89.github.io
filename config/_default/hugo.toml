@@ -1,0 +1,23 @@
+baseURL = "https://wontaekim89.github.io/"
+theme = "blowfish"
+defaultContentLanguage = "ko"
+enableRobotsTXT = true
+summaryLength = 0
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 12
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"

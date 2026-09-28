@@ -1,0 +1,96 @@
+/* ---- 서체: 본문 Pretendard, 코드·메타 JetBrains Mono ---- */
+html, body, .prose, button, input {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+}
+code, pre, kbd, .font-mono {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+  letter-spacing: 0;
+}
+.prose { line-height: 1.85; }
+.prose h2, .prose h3 { letter-spacing: -0.025em; }
+
+/* ---- 홈 소개 ---- */
+.intro-lead {
+  font-size: 1.2rem !important;
+  line-height: 1.9 !important;
+  max-width: 40rem;
+  margin: 0 auto 2rem !important;
+  text-wrap: balance;
+  color: rgb(var(--color-neutral-600));
+}
+.dark .intro-lead { color: rgb(var(--color-neutral-300)); }
+.intro-lead strong { color: rgb(var(--color-primary-600)); }
+.dark .intro-lead strong { color: rgb(var(--color-primary-300)); }
+
+.intro-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  max-width: 48rem;
+  margin: 0 auto 1.75rem;
+}
+.intro-stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 0.75rem;
+  border-radius: 14px;
+  background: rgb(var(--color-neutral-100) / 0.7);
+  border: 1px solid rgb(var(--color-neutral-200));
+  backdrop-filter: blur(8px);
+}
+.dark .intro-stats > div {
+  background: rgb(var(--color-neutral-900) / 0.55);
+  border-color: rgb(255 255 255 / 0.08);
+}
+.intro-stats b {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(var(--color-primary-600));
+}
+.dark .intro-stats b { color: rgb(var(--color-primary-300)); }
+.intro-stats span { font-size: 0.8rem; line-height: 1.4; color: rgb(var(--color-neutral-500)); }
+.dark .intro-stats span { color: rgb(var(--color-neutral-400)); }
+@media (max-width: 640px) {
+  .intro-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.intro-links { display: flex; justify-content: center; gap: 1.5rem; margin-top: 0 !important; }
+.intro-links a {
+  font-weight: 700;
+  text-decoration: none !important;
+  color: rgb(var(--color-primary-600)) !important;
+}
+.dark .intro-links a { color: rgb(var(--color-primary-300)) !important; }
+
+/* ---- 카드: 살짝 떠오르는 호버 ---- */
+a:has(> .article-link--card),
+.article-link--card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+a:hover > .article-link--card,
+.article-link--card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -18px rgb(var(--color-primary-500) / 0.45);
+  border-color: rgb(var(--color-primary-400) / 0.6) !important;
+}
+
+/* ---- 코드 블록 ---- */
+.prose pre {
+  border-radius: 12px;
+  border: 1px solid rgb(255 255 255 / 0.06);
+}
+
+/* ---- 프로젝트 수치 강조 ---- */
+.metric {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  color: rgb(var(--color-primary-600));
+}
+.dark .metric { color: rgb(var(--color-primary-300)); }
+
+/* ---- 카드에는 카테고리 + 태그 2개까지만 ---- */
+.article-link--card .flex-wrap > a:nth-child(n+4) { display: none; }
