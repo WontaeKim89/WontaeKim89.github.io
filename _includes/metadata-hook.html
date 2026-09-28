@@ -1,0 +1,97 @@
+<!-- 폰트: 한글 글리프가 있는 본문 서체 + 코드용 모노 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* ---- Ink & Phosphor: Chirpy 기본 테마 위에 색·서체만 덮어쓴다 ---- */
+  html {
+    --link-color: #0b7a4b;
+    --link-underline-color: #b9dcc9;
+  }
+
+  html[data-mode='dark'] {
+    --main-bg: #0e1116;
+    --main-border-color: #232a33;
+    --text-color: #c9d1d9;
+    --heading-color: #e6e8eb;
+    --link-color: #7ee2a8;
+    --link-underline-color: #2e5a44;
+    --sidebar-bg: #0b0e12;
+    --sidebar-active-color: #e6e8eb;
+    --topbar-bg: rgb(14 17 22 / 72%);
+    --card-bg: #131820;
+    --card-hover-bg: #1a2029;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html:not([data-mode='light']) {
+      --main-bg: #0e1116;
+      --main-border-color: #232a33;
+      --text-color: #c9d1d9;
+      --heading-color: #e6e8eb;
+      --link-color: #7ee2a8;
+      --link-underline-color: #2e5a44;
+      --sidebar-bg: #0b0e12;
+      --sidebar-active-color: #e6e8eb;
+      --topbar-bg: rgb(14 17 22 / 72%);
+      --card-bg: #131820;
+      --card-hover-bg: #1a2029;
+    }
+  }
+
+  body,
+  h1, h2, h3, h4, h5, h6,
+  .card-title {
+    font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  }
+
+  code, pre, kbd, .post-meta, .home-intro-kicker, .home-list-title, time {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  .content p, .content li { line-height: 1.85; }
+
+  /* ---- 홈 자기소개 ---- */
+  .home-intro {
+    padding: 1.75rem 0 2.25rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--main-border-color);
+  }
+  .home-intro p { color: var(--text-color); line-height: 1.8; margin-bottom: 0.75rem; }
+  .home-intro-kicker {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--link-color) !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .home-intro-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    color: var(--heading-color);
+  }
+  .home-intro-facts {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0;
+  }
+  .home-intro-facts li {
+    padding: 0.35rem 0;
+    color: var(--text-color);
+  }
+  .home-intro-facts strong { color: var(--heading-color); }
+  .home-intro-links a { font-weight: 600; }
+  .home-intro-links span { margin: 0 0.35rem; opacity: 0.5; }
+  .home-list-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    opacity: 0.7;
+    margin: 0 0 1rem;
+  }
+
+  /* ---- 프로젝트 페이지 수치 ---- */
+  .metric { font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--link-color); }
+</style>
