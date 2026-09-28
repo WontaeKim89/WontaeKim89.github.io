@@ -1,6 +1,6 @@
 ---
 title: "Kim Won Tae"
-description: "AI Engineer Kim Won Tae의 기술 블로그"
+description: "FDE / AI Engineer Kim Won Tae의 기술 블로그"
 ---
 
 <p class="intro-lead">고객 현장에서 문제를 뜯어보고, 그 상황에 맞는 <strong>에이전트와 모델</strong>을 만들어 배포합니다. 클라우드와 폐쇄망을 오가며 도메인 특화 에이전트와 임베딩 모델을 개발하고 있어요.</p>
