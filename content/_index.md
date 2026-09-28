@@ -3,13 +3,7 @@ title: "Kim Won Tae"
 description: "FDE / AI Engineer Kim Won Tae의 기술 블로그"
 ---
 
-<p class="intro-lead">고객 현장에서 문제를 뜯어보고, 그 상황에 맞는 <strong>에이전트와 모델</strong>을 만들어 배포합니다. 클라우드와 폐쇄망을 오가며 도메인 특화 에이전트와 임베딩 모델을 개발하고 있어요.</p>
+<p class="intro-lead">고객의 현장에서 업무 구조와 환경, 그리고 잠재된 불편함을 분석하고, 사용자 경험을 개선할 수 있는 도메인 특화 AI 서비스 및 에이전트를 개발합니다. 기술보다 문제의 본질을 탐구하는 것을 중요하게 생각합니다.</p>
 
-<div class="intro-stats">
-  <div><b>3개</b><span>직접 공개한 모델</span></div>
-  <div><b>1,000개</b><span>기업이 쓰는 업무비서 에이전트</span></div>
-  <div><b>400개</b><span>Tool 오케스트레이션</span></div>
-  <div><b>0.934</b><span>직접 만든 PII 모델 F1</span></div>
-</div>
 
 <p class="intro-links"><a href="/projects/">프로젝트 보기 →</a><a href="/about/">개발 타임라인 →</a></p>

@@ -49,13 +49,13 @@ Tool·Agent 검색용 E5는 도메인 NDCG@10 **0.773** (+14.3pt), 약관 색인
 
 {{< /timeline >}}
 
-## 주로 쓰는 기술
+## Stack
 
 - **Agent** LangGraph · Multi-Agent · ReAct · Plan&Execute · RAG
 - **Retrieval** E5 · KURE · RoBERTa · LoRA · Azure AI Search · FAISS · Re-ranking
 - **Backend** Python · FastAPI · PostgreSQL · Cosmos DB · Redis · PyTorch
 - **Cloud** Azure Container Apps · Durable Functions · Key Vault · Docker · GitHub Actions · Langfuse
 
-## 연락
+## Contact
 
 [zzang891014@gmail.com](mailto:zzang891014@gmail.com) · [GitHub](https://github.com/WontaeKim89) · [Hugging Face](https://huggingface.co/1T)
