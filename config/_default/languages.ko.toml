@@ -13,7 +13,7 @@ title = "Kim Won Tae"
 [params.author]
   name = "Kim Won Tae"
   headline = "FDE / AI Engineer"
-  bio = "고객 현장에서 문제를 뜯어보고, 그 상황에 맞는 에이전트와 모델을 만듭니다."
+  bio = "고객의 현장에서 업무 구조와 환경, 그리고 잠재된 불편함을 분석하고, 사용자 경험을 개선할 수 있는 도메인 특화 AI 서비스 및 에이전트를 개발합니다."
   links = [
     { github = "https://github.com/WontaeKim89" },
     { email = "mailto:zzang891014@gmail.com" },
