@@ -1,0 +1,22 @@
+{{/* 테마 기본 문구("이 글은 시리즈의 일부입니다", "부분 1: 이 글")가 번역투라 블로그 말투로 덮어씀 */}}
+{{ if .Params.series }}
+  {{ $seriesName := strings.ToLower (index .Params.series 0) }}
+  {{ $posts := sort (index .Site.Taxonomies.series $seriesName) "Params.series_order" }}
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 -ms-5 ps-5 dark:bg-primary-800 dark:text-neutral-100">
+    {{ index .Params.series 0 }} 시리즈 (총 {{ len $posts }}편)
+  </summary>
+  {{ range $post := $posts }}
+    {{ if eq $post.Permalink $.Page.Permalink }}
+      <div
+        class="py-1 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+        {{ $post.Params.series_order }}편. {{ $post.Title | emojify }} (지금 보는 글)
+      </div>
+    {{ else }}
+      <div
+        class="py-1 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+        <a href="{{ $post.RelPermalink }}">{{ $post.Params.series_order }}편. {{ $post.Title | emojify }}</a>
+      </div>
+    {{ end }}
+  {{ end }}
+{{ end }}
